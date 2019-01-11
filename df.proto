@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message Path {
+    string value = 1;
+}
+
+message df {
+    string value =1;
+}
+service data {
+    rpc read_data(Path) returns (df) {}
+}
